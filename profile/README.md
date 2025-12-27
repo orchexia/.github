@@ -27,7 +27,18 @@ These configurations help ensure:
 ## 📁 Repository Structure
 
 ```
-
+.github/ 
+├── ISSUE_TEMPLATE/ 
+│   ├── bug_report.md 
+│   ├── feature_request.md 
+│   └── research_discussion.md 
+│ 
+├── workflows/ 
+│   └── ci.yml 
+│ 
+├── PULL_REQUEST_TEMPLATE.md 
+├── SECURITY.md 
+└── CONTRIBUTING.md
 ```
 > Not all files may exist initially. Files are added as the organization grows.
 
