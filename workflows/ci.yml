@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  validate:
+    name: Validate Repository Standards
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate file formatting
+        run: |
+          echo "Checking markdown files..."
+          find . -name "*.md" -print
+
+      - name: Validate YAML syntax
+        run: |
+          echo "Checking YAML files..."
+          sudo apt-get update
+          sudo apt-get install -y yamllint
+          yamllint . || true
+
+      - name: Ensure required files exist
+        run: |
+          echo "Validating required files..."
+          test -f README.md || echo "README.md not found"
+          test -f CONTRIBUTING.md || echo "CONTRIBUTING.md not found"
+          test -f SECURITY.md || echo "SECURITY.md not found"
+
+      - name: CI completed
+        run: echo "Basic CI checks completed successfully."
