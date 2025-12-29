@@ -1,4 +1,4 @@
-# ORCHEXIA — GitHub Organization Configuration
+# ORCHEXIA
 
 This repository contains **shared GitHub configuration files** for the **ORCHEXIA** organization.
 
@@ -47,4 +47,41 @@ These configurations help ensure:
 ## 🔐 Security
 
 Security policies and vulnerability reporting guidelines are defined in:
+```
+SECURITY.md
+```
+Please follow responsible disclosure practices.
 
+---
+
+## 🤝 Contributions
+
+Contribution rules, coding standards, and review processes are defined in:
+```
+CONTRIBUTING.md
+```
+All contributors are expected to follow these guidelines.
+
+---
+
+## 🧠 About ORCHEXIA
+
+ORCHEXIA is an experimental AI automation project under active development.
+
+This repository supports organization-level configuration and standards.
+
+---
+
+## 📄 License
+
+Unless stated otherwise, configuration files in this repository follow the same license used by the main ORCHEXIA project.
+
+---
+
+## 🏛️ Governance Philosophy
+
+> _“Strong systems are built not only with good code, but with clear standards and shared responsibility.”_
+
+This repository helps maintain those standards.
+
+---
